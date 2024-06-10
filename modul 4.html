@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama</title>
+    <!-- Bootstrap CSS untuk styling tabel -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Style untuk kolom layout */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Style untuk form */
+        form {
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        /* Style untuk tombol */
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Style untuk dropdown menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Kolom 1 -->
+        <div>
+            <h2>Selamat Datang di Website Arrietty Library</h2>
+        </div>
+        <!-- Kolom 2 -->
+        <div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nama Buku</th>
+                        <th>Pengarang</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Book 1</td>
+                        <td>Author 1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Book 2</td>
+                        <td>Author 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Kolom 3 -->
+        <div>
+            <form>
+                <div class="form-group">
+                    <label for="nama">Nama:</label>
+                    <input type="text" class="form-control" id="nama">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <!-- Dropdown menu -->
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
