@@ -5,30 +5,93 @@ body {
     padding: 0;
 }
 
-.navbar {
-    background-color: #333;
-    overflow: hidden;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5%;
 }
 
-.navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
+.header .navbar a {
+    font-size: 1.7rem;
+    color: #aaa;
+    display: inline-block;
+    margin: 0 1rem;
 }
 
-.navbar a:hover {
-    background-color: #ddd;
+.logo-img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.header .navbar a:hover {
+    color: #0ea5e9;
+}
+
+.header .btn {
+    margin-top: 0;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.logo h3 {
+    color: #fff;
+    font-weight: 800;
+}
+
+.logo i {
+    color: #0ea5e9;
+    padding-right: 0.5rem;
+    height: 2rem;
+    width: 2rem;
+    gap: 2em;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
     color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .container {
     max-width: 800px;
-    margin: 50px auto;
+    margin: 150px auto; /* Menambahkan margin atas agar tidak tertutup header */
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .box {
@@ -43,8 +106,10 @@ body {
 
 h2 {
     color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 p {
     color: #666;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
