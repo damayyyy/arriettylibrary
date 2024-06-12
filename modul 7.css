@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e9ebf3;
+    margin: 0;
+}
+
+.calculator {
+    background: #ff7eb9; /* Warna pink */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(196, 118, 118, 0.1);
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+
+.calculator input,
+.calculator select,
+.calculator button {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.calculator select {
+    background-color: #fff;
+    color: #000;
+}
+
+.calculator button {
+    background-color: #ff4e96; /* Warna pink tua untuk tombol */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calculator button:hover {
+    background-color: #ff3681; /* Warna pink lebih gelap saat tombol di-hover */
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 18px;
+    color: #ff4e96; /* Warna teks pink untuk hasil */
+}
