@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        form {
+            background-color: #fff;
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 22px); /* 22px for padding and border */
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS styles here */
+    </style>
+</head>
+<body>
+
+<h2>Reference Form</h2>
+
+<form id="myForm">
+  <label for="fname">Name:</label><br>
+  <input type="text" id="fname" name="fname" value=" "><br>
+  <label for="lname">NIM:</label><br>
+  <input type="text" id="lname" name="lname" value=" "><br>
+  <label for="email">Phone Number:</label><br>
+  <input type="text" id="email" name="email" value=" "><br><br>
+  <label for="email">Consultation Date:</label><br>
+  <input type="text" id="email" name="email" value=" "><br><br>
+  <label for="email">Consultation Topic:</label><br>
+  <input type="text" id="email" name="email" value=" "><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, Reference Librarian Will Contact You Soon.</p>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Mencegah peristiwa pengiriman bawaan
+
+        // Lakukan sesuatu di sini, misalnya validasi input atau pengiriman data melalui AJAX
+        
+        alert("Form submitted successfully!"); // Tampilkan pesan konfirmasi
+
+        // Atau, jika Anda ingin mengirim data melalui AJAX, gunakan kode berikut
+        /*
+        var formData = new FormData(this);
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "/action_page.php", true);
+        xhr.send(formData);
+        xhr.onload = function() {
+            if (xhr.status == 200) {
+                alert("Form submitted successfully!");
+            } else {
+                alert("An error occurred. Please try again later.");
+            }
+        };
+        */
+    });
+</script>
+
+</body>
+</html>
