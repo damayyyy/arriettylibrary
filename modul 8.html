@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan NHR</title>
+    <link rel="stylesheet" href="C:\Users\damai\Documents\GitHub\WebDamay\Modul 8\modul 8.css"> <!-- Memasukkan file CSS terpisah -->
+</head>
+<body>
+    <h1>Library Database</h1>
+    <table id="libraryTable">
+        <thead>
+            <tr>
+                <th>Judul e-Journal</th> <!-- Mengubah judul kolom -->
+                <th>Penulis</th>
+                <th>Tahun</th>
+                <th>ISBN</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data rows will be inserted here by JavaScript -->
+        </tbody>
+    </table>
+
+    <form id="libraryForm">
+        <input type="hidden" id="editIndex">
+        <input type="text" id="title" placeholder="Judul" required>
+        <input type="text" id="author" placeholder="Penulis" required>
+        <input type="number" id="year" placeholder="Tahun" required>
+        <input type="text" id="isbn" placeholder="ISBN" required>
+        <button type="button" onclick="addOrUpdateJournal()">Tambah/Perbarui</button> <!-- Memanggil fungsi JavaScript baru -->
+    </form>
+
+    <footer>
+        <p>&copy; by NURUL HASANAH RITONGA</p>
+    </footer>
+
+    <script src="C:\Users\damai\Documents\GitHub\WebDamay\Modul 8\modul 8.js"></script> <!-- Memasukkan file JavaScript terpisah -->
+</body>
+</html>

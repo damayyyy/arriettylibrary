@@ -1,0 +1,79 @@
+/* CSS tetap sama seperti sebelumnya */
+body {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    margin: 0;
+}
+
+h1 {
+    color: #ff4e96;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+table, th, td {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    background-color: #ff4e96;
+}
+
+th {
+    background-color: #ff3681;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input, button {
+    padding: 8px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #ff3681;
+    color: #fff;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff4e96;
+}
+
+footer {
+    background-color: #ff4e96;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
